@@ -14,6 +14,7 @@ export default function ProductCard({ product, saved, onToggle, onOpen }) {
           <Heart size={18} fill={saved ? 'currentColor' : 'none'}/>
         </button>
       </div>
+      <p className="price">₹{product.price.toLocaleString('en-IN')}</p>
     </article>
   );
 }

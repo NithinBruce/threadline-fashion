@@ -10,6 +10,7 @@ export default function ProductModal({ product, onClose, saved, onToggle }) {
         <div className="modal-info">
           <span className="eyebrow">{product.category} / {product.type}</span>
           <h2>{product.name}</h2>
+          <p className="price">₹{product.price.toLocaleString('en-IN')}</p>
           <p>{product.description}</p>
           <p className="modal-note">Available sizes: XS · S · M · L · XL</p>
           <button className="dark-button" onClick={() => onToggle(product.id)}>
